@@ -133,6 +133,37 @@ header .menu .activo {
 /* final header */
 
 
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.250em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 250%;
+}
+
+/* fin footer */
 
 
 
@@ -152,6 +183,10 @@ header .menu .activo {
 
     header .nav-top .container {
         justify-content: space-between;
+    }
+
+    footer {
+        text-align: left;
     }
 }
 
