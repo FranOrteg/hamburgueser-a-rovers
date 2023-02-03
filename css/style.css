@@ -78,9 +78,65 @@ header .nav-top a span {
     display: none;
 }
 
+header nav {
+    padding: 1.250em;
+}
 
+header .hamburguesa {
+    width: 1.875em;
+    cursor: pointer;
+}
+
+header .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex wrap hace que hasta que no le demos medida los elementos se repartan el espacio */
+    justify-content: space-between;
+}
+
+header nav .menu {
+    width: 100%;
+    padding-top: 1.25em;
+}
+
+header .logo {
+    max-width: 100px;
+}
+
+header .menu a {
+    display: block;
+    text-align: center;
+    padding: 1.25em;
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+    transition: 0.5s;
+}
+
+header .menu li:last-child a {
+    border-bottom: none;
+}
+
+header .menu a :hover {
+    color: var(--colorprincipal);
+}
+
+header .menu .activo {
+    color: var(--colorprincipal);
+}
 
 /* final header */
+
+
+
+
+
+
 
 
 /* medias queris */
@@ -93,6 +149,31 @@ header .nav-top a span {
     }
 
     /* queda pendiente ajustar los margenes del nav-top */
+
+    header .nav-top .container {
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:62.750em) {
+
+    header .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu {
+        width: auto;
+        padding-top: 0;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header .menu a {
+        border-bottom: 0px;
+        padding: 0.5em 0 0.5em 1.25em;
+    }
 }
 
 
