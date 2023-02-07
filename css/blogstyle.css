@@ -1,0 +1,23 @@
+/* inicio section ourblog */
+
+main #ourblog .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 30px 0;
+}
+
+/* fin section our blog */
+
+
+/* medias querys */
+
+/* media de 1004px */
+
+@media(min-width:62.750em) {
+
+    main #ourblog .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--margingrid + 1em);
+    }
+}
