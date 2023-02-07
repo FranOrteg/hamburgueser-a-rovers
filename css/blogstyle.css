@@ -1,3 +1,13 @@
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+}
+
 /* inicio section ourblog */
 
 main #ourblog .grid {
@@ -5,6 +15,54 @@ main #ourblog .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     padding: 30px 0;
+}
+
+main #ourblog .grid figure {
+    position: relative;
+    display: flex;
+}
+
+main #ourblog .grid .fecha {
+    position: absolute;
+    background-color: var(--colorprincipal);
+    width: 35%;
+    height: 50%;
+    opacity: 0.9;
+}
+
+main #ourblog .grid .fecha p {
+    font-family: var(--fuenteprincipal);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    align-items: center;
+}
+
+main #ourblog .grid h3 {
+    font-family: var(--fuenteprincipal);
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+main #ourblog .grid h4 {
+    color: var(--colorprincipal);
+    font-weight: 700;
+    padding: 10px 0px 10px 0px
+}
+
+main #ourblog .grid .text {
+    margin: var(--margingrid);
+    line-height: 1.5;
+}
+
+main #ourblog .grid .text p {
+    padding-bottom: 20px;
+    font-size: 14px;
 }
 
 /* fin section our blog */
@@ -19,5 +77,21 @@ main #ourblog .grid {
     main #ourblog .grid {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--margingrid + 1em);
+    }
+
+    main #ourblog .grid .fecha p {
+        padding: 20px;
+        font-size: 1.6em;
+        align-items: center;
+    }
+}
+
+/* media de 768px */
+
+@media(min-width: 48.000em) {
+
+    main #ourblog .grid .fecha p {
+        padding: 20px;
+        font-size: 1.5em;
     }
 }
