@@ -1,0 +1,81 @@
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+}
+
+/* inicio section ourblog */
+
+main #ourblog .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 30px 0;
+}
+
+main #ourblog .grid figure {
+    position: relative;
+    display: flex;
+}
+
+main #ourblog .grid .fecha {
+    position: absolute;
+    background-color: var(--colorprincipal);
+    width: 70px;
+    height: 70px;
+    opacity: 0.9;
+}
+
+main #ourblog .grid .fecha p {
+    font-family: var(--fuenteprincipal);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+main #ourblog .grid h3 {
+    font-family: var(--fuenteprincipal);
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+main #ourblog .grid h4 {
+    color: var(--colorprincipal);
+    font-weight: 700;
+    padding: 10px 0px 10px 0px;
+    font-size: var(--fontsize);
+}
+
+main #ourblog .grid .text {
+    margin: calc(var(--margingrid) - 9px);
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+main #ourblog .grid .text p {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* fin section our blog */
+
+
+/* medias querys */
+
+/* media de 1004px */
+
+@media(min-width:62.750em) {
+
+    main #ourblog .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--margingrid + 1em);
+    }
+}
