@@ -16,6 +16,7 @@
 
 #menu .container {
     max-width: 400px;
+    padding-top: 40px;
 }
 
 #menu .container h2 {
@@ -32,6 +33,7 @@
     padding: 0.7em;
     display: inline-block;
     width: 100%;
+    font-size: 14px;
 }
 
 
@@ -39,6 +41,13 @@
     background-color: var(--colorprincipal);
     text-decoration: none;
     border-radius: 5px 5px 5px 5px;
+}
+
+.offers h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 10px;
 }
 
 .offers h4 {
@@ -58,7 +67,7 @@
 
 .offers p {
     color: #aaa;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.5;
 }
 
@@ -76,5 +85,61 @@
     padding: 1em;
 }
 
+.offers a {
+    font-size: 14px;
+}
 
 /* fin section menu */
+
+/* media querys */
+
+@media(min-width:62.750em) {
+
+    #menu .container {
+        max-width: var(--anchomaximo);
+    }
+
+    #menu .grid {
+        display: flex;
+    }
+
+    #menu .grid .breakfast {
+        width: 22%;
+    }
+
+    .offers article {
+        display: flex;
+    }
+
+    .offers figure {
+        width: 150px;
+        padding-top: 0.5em;
+    }
+
+    .offers {
+        margin: 0 auto;
+    }
+
+    .offers article .prices {
+        padding-left: 2em;
+        line-height: 2em;
+    }
+
+    .offers h4 {
+        font-size: var(--fontsize);
+        display: inline;
+    }
+
+    .offers p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .breakfast nav {
+        padding-bottom: 30px;
+    }
+
+    .flecha {
+        display: none;
+    }
+}
