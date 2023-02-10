@@ -1,0 +1,145 @@
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+}
+
+/* inicio section menu */
+
+#menu {
+    background-color: var(--colorsecundario);
+}
+
+#menu .container {
+    max-width: 400px;
+    padding-top: 40px;
+}
+
+#menu .container h2 {
+    color: white;
+}
+
+.lista {
+    padding: 40px 0 40px 0;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7em;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.lista li:nth-child(2) {
+    background-color: var(--colorprincipal);
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.offers h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.offers h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.offers hr {
+    border-color: #fa573a;
+    width: 50px;
+    display: inline-block;
+    line-height: 1.5;
+    margin: 15px 0 10px 0;
+}
+
+.offers p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.offers article {
+    margin: var(--margingrid);
+    padding-top: 1em;
+}
+
+.offers article div {
+    line-height: 3;
+}
+
+.offers h4 span {
+    color: var(--colorprincipal);
+    padding: 1em;
+}
+
+.offers a {
+    font-size: 14px;
+}
+
+/* fin section menu */
+
+/* media querys */
+
+@media(min-width:62.750em) {
+
+    #menu .container {
+        max-width: var(--anchomaximo);
+    }
+
+    #menu .grid {
+        display: flex;
+    }
+
+    #menu .grid .breakfast {
+        width: 22%;
+    }
+
+    .offers article {
+        display: flex;
+    }
+
+    .offers figure {
+        width: 150px;
+        padding-top: 0.5em;
+    }
+
+    .offers {
+        margin: 0 auto;
+    }
+
+    .offers article .prices {
+        padding-left: 2em;
+        line-height: 2em;
+    }
+
+    .offers h4 {
+        font-size: var(--fontsize);
+        display: inline;
+    }
+
+    .offers p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .breakfast nav {
+        padding-bottom: 30px;
+    }
+
+    .flecha {
+        display: none;
+    }
+}
