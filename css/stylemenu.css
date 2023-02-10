@@ -37,6 +37,39 @@
     border-radius: 5px 5px 5px 5px;
 }
 
+.offers h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.offers hr {
+    border-color: #fa573a;
+    width: 50px;
+    display: inline-block;
+    line-height: 1.5;
+    margin: 15px 0 10px 0;
+}
+
+.offers p {
+    color: #aaa;
+    font-size: var(--fontsize);
+    line-height: 1.5;
+}
+
+.offers article {
+    margin: var(--margingrid);
+    padding-top: 1em;
+}
+
+.offers article div {
+    line-height: 3;
+}
+
+.offers h4 span {
+    color: var(--colorprincipal);
+    padding: 1em;
+}
 
 
 /* fin section menu */
